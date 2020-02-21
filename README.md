@@ -1,121 +1,55 @@
-# `@elunic/ecs`
+# `@elunic/eslint-config-ecs`
 
-[![Build Status](https://travis-ci.org/elunic/ecs.svg?branch=master)](https://travis-ci.org/elunic/ecs)
+[![Build Status](https://travis-ci.org/elunic/eslint-config-ecs.svg?branch=master)](https://travis-ci.org/elunic/eslint-config-ecs)
 
-The elunic coding styles
+The eslint part of the elunic coding styles
 
 ## Table of Contents
 
-- [`@elunic/ecs`](#elunicecs)
+- [`@elunic/eslint-config-ecs`](#eluniceslint-config-ecs)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
-    - [`tsconfig`](#tsconfig)
-    - [`eslint`](#eslint)
-    - [`tslint`](#tslint)
-      - [`tslint-react` `peerDependency` for React](#tslint-react-peerdependency-for-react)
-    - [Prettier](#prettier)
-    - [EditorConfig](#editorconfig)
-    - [Commitlint](#commitlint)
+    - [Default config (non-fix)](#default-config-non-fix)
+    - [Fix config](#fix-config)
   - [License](#license)
 
 ## Installation
 
+This module is automatically installed as part of the `@elunic/ecs` package.
+
+For a standalone install, use:
 ```bash
-$ npm install @elunic/ecs
+$ npm i -D @elunic/eslint-config-ecs
 ```
 
 ## Usage
 
-### `tsconfig`
-
-- `tsconfig/tsconfig.json`
-- `tsconfig/tsconfig.prod.json`
-
-Example usage for your `/tsconfig.json`:
-
-```json
-{
-  "extends": "@elunic/ecs/tsconfig/tsconfig.json",
-  "rules": {}
-}
-```
-
-### `eslint`
-
-There is currently no `eslint` configuration for Angular, as Angular itself
+**Note for Angular projects**: There is currently no `eslint` configuration for Angular, as Angular itself
 has not yet switched to using `eslint`. For Angular projects, `tslint` should still be used.
 
-- `eslint/.eslintrc.json`
-- `eslint/.eslintrc.fix.json`
+### Default config (non-fix)
 
 Example usage for your `/.eslintrc.json`:
 
 ```json
 {
-  "extends": "@elunic/ecs/eslint/.eslintrc.json",
+  "extends": "@elunic/eslint-config-ecs",
   "rules": {}
 }
 ```
 
-### `tslint`
+### Fix config
 
-Note that `tslint` is deprecated with an expected EOL at the end of 2020.
-
-Currently, the `tslint` configurations for **Angular** are still in use because Angular has
-not yet switched to `eslint`.
-
-- `tslint/tslint.json`
-- `tslint/tslint.fix.json`
-- `tslint/tslint-angular7.json`
-- `tslint/tslint-angular7.fix.json`
-- `tslint/tslint-angular8.json`
-- `tslint/tslint-angular8.fix.json`
-- `tslint/tslint-react16.json`
-- `tslint/tslint-react16.fix.json`
-
-Example usage for your `/tslint.json`:
+Example usage for your `/.eslintrc.fix.json`:
 
 ```json
 {
-  "extends": "@elunic/ecs/tslint/tslint.json",
+  "extends": "@elunic/eslint-config-ecs/fix",
   "rules": {}
 }
 ```
 
-#### `tslint-react` `peerDependency` for React
-
-For React, the `tslint-react` `peerDependency` is required.
-
-### Prettier
-
-- `prettier/prettier.config.js`
-
-Example usage for your `/.prettierrc.json`:
-
-```javascript
-"@elunic/ecs/prettier"
-```
-
-### EditorConfig
-
-- `editorconfig/.editorconfig`
-
-Must currently be included by copying it to your project root.
-
-### Commitlint
-
-- `commitlint/index.js`
-
-Example usage for your `/.commitlintrc.json`:
-
-```javascript
-{
-  "extends": [
-    "@elunic/ecs/commitlint"
-  ]
-}
-```
 
 ## License
 
