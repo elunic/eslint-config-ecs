@@ -1,6 +1,6 @@
 {
   "name": "@elunic/eslint-config-ecs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The eslint part of the elunic coding styles",
   "main": "index.js",
   "files": [
