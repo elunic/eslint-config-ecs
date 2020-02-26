@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["./.eslintrc.js", "prettier"],
+  extends: ["@elunic/eslint-config-ecs/eslintrc/.eslintrc.js", "prettier"],
   plugins: ["prettier"],
   rules: {
     "import/order": [
