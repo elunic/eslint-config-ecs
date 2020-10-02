@@ -67,7 +67,13 @@ module.exports = {
     ],
     "no-throw-literal": "error",
     "@typescript-eslint/no-unused-expressions": "error",
-    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        varsIgnorePattern: "^_$",
+        argsIgnorePattern: "^_$"
+      }
+    ],
     "no-warning-comments": "warn",
     "no-var": "error",
     "object-shorthand": "error",
