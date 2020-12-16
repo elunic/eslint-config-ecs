@@ -1,15 +1,15 @@
 module.exports = {
   extends: ["@elunic/eslint-config-ecs/eslintrc/.eslintrc.js", "prettier"],
-  plugins: ["prettier"],
+  plugins: ["prettier", "simple-import-sort"],
   rules: {
-    "import/order": [
-      "error",
-      {
-        "newlines-between": "always"
-      }
-    ],
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
     "no-undef-init": "error",
     "prettier/prettier": "error",
-    "spaced-comment": ["error", "always"]
-  }
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": "error",
+    "sort-imports": "off",
+    "spaced-comment": ["error", "always"],
+  },
 };
