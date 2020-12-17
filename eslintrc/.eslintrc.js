@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
   ],
   parser: "@typescript-eslint/parser",
   plugins: ["ban", "import", "jsdoc", "@typescript-eslint"],
@@ -10,19 +10,19 @@ module.exports = {
     "@typescript-eslint/array-type": [
       "error",
       {
-        default: "array-simple"
-      }
+        default: "array-simple",
+      },
     ],
     "ban/ban": [
       "error",
       {
         name: "parseInt",
-        message: "Type coercion not allowed, use Number()"
+        message: "Type coercion not allowed, use Number()",
       },
       {
         name: "parseFloat",
-        message: "Type coercion not allowed, use Number()"
-      }
+        message: "Type coercion not allowed, use Number()",
+      },
     ],
     "block-scoped-var": "error",
     "@typescript-eslint/camelcase": "off",
@@ -33,8 +33,8 @@ module.exports = {
     "@typescript-eslint/explicit-member-accessibility": [
       "error",
       {
-        accessibility: "no-public"
-      }
+        accessibility: "no-public",
+      },
     ],
     "guard-for-in": "error",
     "import/no-default-export": "error",
@@ -51,19 +51,20 @@ module.exports = {
     "no-console": [
       "error",
       {
-        allow: ["debug", "info", "time", "timeEnd", "trace"]
-      }
+        allow: ["debug", "info", "time", "timeEnd", "trace"],
+      },
     ],
     "@typescript-eslint/no-dupe-class-members": "off",
     "no-eval": "error",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-non-null-assertion": "error",
     "no-new-wrappers": "error",
-    "no-shadow": [
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": [
       "error",
       {
-        hoist: "all"
-      }
+        hoist: "all",
+      },
     ],
     "no-throw-literal": "error",
     "@typescript-eslint/no-unused-expressions": "error",
@@ -71,14 +72,14 @@ module.exports = {
       "error",
       {
         varsIgnorePattern: "^_$",
-        argsIgnorePattern: "^_$"
-      }
+        argsIgnorePattern: "^_$",
+      },
     ],
     "no-warning-comments": "warn",
     "no-var": "error",
     "object-shorthand": "error",
     "prefer-const": "error",
     radix: "error",
-    "@typescript-eslint/unified-signatures": "error"
-  }
+    "@typescript-eslint/unified-signatures": "error",
+  },
 };
