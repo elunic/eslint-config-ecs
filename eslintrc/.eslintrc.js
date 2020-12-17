@@ -59,6 +59,7 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-non-null-assertion": "error",
     "no-new-wrappers": "error",
+    // See https://stackoverflow.com/questions/63961803/eslint-says-all-enums-in-typescript-app-are-already-declared-in-the-upper-scope
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": [
       "error",
@@ -68,6 +69,8 @@ module.exports = {
     ],
     "no-throw-literal": "error",
     "@typescript-eslint/no-unused-expressions": "error",
+    // See https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
+    "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
