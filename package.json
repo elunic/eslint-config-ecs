@@ -1,6 +1,6 @@
 {
   "name": "@elunic/eslint-config-ecs",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "The eslint part of the elunic coding styles",
   "main": "index.js",
   "files": [
@@ -46,6 +46,7 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@types/eslint": "^7.2.6",
+    "eslint-plugin-unused-imports": "^1.0.1",
     "husky": "^1.3.1",
     "lint-staged": "^8.2.1"
   },

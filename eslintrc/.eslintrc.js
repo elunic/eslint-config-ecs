@@ -5,7 +5,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
   ],
   parser: "@typescript-eslint/parser",
-  plugins: ["ban", "import", "jsdoc", "@typescript-eslint"],
+  plugins: ["ban", "import", "jsdoc", "@typescript-eslint", "unused-imports"],
   rules: {
     "@typescript-eslint/array-type": [
       "error",
@@ -71,7 +71,9 @@ module.exports = {
     "@typescript-eslint/no-unused-expressions": "error",
     // See https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": [
+    // See https://www.npmjs.com/package/eslint-plugin-unused-imports
+    "@typescript-eslint/no-unused-vars": "off",
+    "unused-imports/no-unused-vars-ts": [
       "error",
       {
         varsIgnorePattern: "^_$",

@@ -9,6 +9,7 @@ module.exports = {
     "prettier/prettier": "error",
     "simple-import-sort/exports": "error",
     "simple-import-sort/imports": "error",
+    "unused-imports/no-unused-imports-ts": "error",
     "sort-imports": "off",
     "spaced-comment": ["error", "always"],
   },
