@@ -40,7 +40,6 @@ module.exports = {
     "import/no-default-export": "error",
     "import/no-deprecated": "warn",
     "jsdoc/check-alignment": "error",
-    "jsdoc/check-indentation": "error",
     "jsdoc/check-param-names": "error",
     "jsdoc/check-property-names": "error",
     "jsdoc/check-syntax": "error",
