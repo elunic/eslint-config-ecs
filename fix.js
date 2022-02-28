@@ -1,1 +1,1 @@
-module.exports = require("./eslintrc/.eslintrc.fix.js");
+module.exports = require('./eslintrc/.eslintrc.fix.js');

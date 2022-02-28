@@ -1,6 +1,6 @@
 {
   "name": "@elunic/eslint-config-ecs",
-  "version": "7.0.1",
+  "version": "8.0.0",
   "description": "The eslint part of the elunic coding styles",
   "main": "index.js",
   "files": [
@@ -44,25 +44,23 @@
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
-    "@types/eslint": "^7.28.0",
+    "@elunic/ecs-prettier": "^0.2.2",
+    "@types/eslint": "^8.4.1",
     "husky": "^4.3.7",
-    "lint-staged": "^12.1.2"
-  },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.7.0",
-    "@typescript-eslint/parser": "^5.7.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-ban": "^1.5.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsdoc": "^30.7.8",
-    "eslint-plugin-prettier": "^3.3.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unused-imports": "^1.0.1",
+    "lint-staged": "^12.1.2",
     "prettier": "^2.5.1"
   },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^8.10.0",
+    "eslint-plugin-ban": "^1.6.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsdoc": "^37.9.4",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0"
+  },
   "peerDependencies": {
-    "prettier": "^2.5.1",
     "typescript": ">= 3.0.0 < 5.0.0"
   },
   "publishConfig": {
