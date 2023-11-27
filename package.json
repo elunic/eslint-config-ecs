@@ -42,8 +42,8 @@
     "email": "wh@elunic.com"
   },
   "devDependencies": {
-    "@commitlint/cli": "^15.0.0",
-    "@commitlint/config-conventional": "^15.0.0",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
     "@elunic/ecs-prettier": "^0.2.2",
     "@types/eslint": "^8.4.1",
     "husky": "^4.3.7",
