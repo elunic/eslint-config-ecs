@@ -1,6 +1,6 @@
 {
   "name": "@elunic/eslint-config-ecs",
-  "version": "8.0.0",
+  "version": "8.1.0-alpha.1",
   "description": "The eslint part of the elunic coding styles",
   "main": "index.js",
   "files": [
@@ -59,9 +59,6 @@
     "eslint-plugin-jsdoc": "^46.9.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unused-imports": "^3.0.0"
-  },
-  "peerDependencies": {
-    "typescript": ">= 3.0.0 < 6.0.0"
   },
   "publishConfig": {
     "access": "public"
