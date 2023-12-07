@@ -1,6 +1,6 @@
 {
   "name": "@elunic/eslint-config-ecs",
-  "version": "8.1.0-alpha.1",
+  "version": "8.1.0",
   "description": "The eslint part of the elunic coding styles",
   "main": "index.js",
   "files": [
